@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aymanelkassas.ecgchecker.Schedule">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#263143"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:title="Analysis"
+            android:titleTextColor="@color/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/coverSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Schedule yet !"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            />
+    </AbsoluteLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lstSchedule">
+    </ListView>
+
+</LinearLayout>

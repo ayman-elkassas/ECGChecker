@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1092977927828",
+    "firebase_url": "https://ecg-checker.firebaseio.com",
+    "project_id": "ecg-checker",
+    "storage_bucket": "ecg-checker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092977927828:android:a68e192ad6273b9c",
+        "android_client_info": {
+          "package_name": "com.example.aymanelkassas.ecgchecker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092977927828-8tkumcmkb5cgvfda2148735nt05fj9fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aymanelkassas.ecgchecker",
+            "certificate_hash": "fa00572fe89dfc7712bb1dc14cb18afe48471777"
+          }
+        },
+        {
+          "client_id": "1092977927828-1neejpesjmipo86db1uf6h91fgoshg24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd3UGRsgfkiHk5JU99UnQ48Bs6xUnY0Cg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092977927828-1neejpesjmipo86db1uf6h91fgoshg24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

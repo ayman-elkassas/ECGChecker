@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aymanelkassas.ecgchecker.settingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Search by name doctor : "
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/searchToken"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backsearchbar"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Search here"
+            android:inputType="textFilter"
+            android:padding="13dp"
+            android:textColor="@color/colorPrimary"
+            android:shadowColor="@android:color/transparent" />
+
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/goSearch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/searchToken"
+            android:layout_alignTop="@id/txtTitle"
+            android:src="@drawable/search"
+            app:cb_color="@color/secondColor"
+            app:cb_pressedRingWidth="8dip"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listDoctors"
+            android:layout_below="@id/searchToken"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            ></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

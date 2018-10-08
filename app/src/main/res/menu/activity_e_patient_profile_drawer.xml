@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/connect1"
+            android:icon="@drawable/connect"
+            android:title="Connect" />
+        <item
+            android:id="@+id/doctors"
+            android:icon="@drawable/person"
+            android:title="My doctor" />
+        <item
+            android:id="@+id/nearHosp"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Near hospitals" />
+    </group>
+
+    <item android:title="Communication">
+
+        <menu>
+            <item
+                android:id="@+id/feedback1"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/about1"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/setting1"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/logout1"
+                android:icon="@drawable/logout"
+                android:title="Sign out" />
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aymanelkassas.ecgchecker.configurations">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#263143"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:title="Setting"
+            android:titleTextColor="@color/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check update automatically"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/gray"
+            />
+
+        <CheckBox
+            android:layout_alignBaseline="@id/config"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/config1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active id 'G6BN07..' "
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/gray"
+            />
+
+        <CheckBox
+            android:layout_alignBaseline="@id/config1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/config2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save drafts"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/gray"
+
+            />
+
+        <CheckBox
+            android:layout_alignBaseline="@id/config2"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/config3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="communicate hospital RFN"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/gray"
+
+            />
+
+        <CheckBox
+            android:layout_alignBaseline="@id/config3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

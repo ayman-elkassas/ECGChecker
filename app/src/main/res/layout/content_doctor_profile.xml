@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aymanelkassas.ecgchecker.DoctorProfile"
+    tools:showIn="@layout/app_bar_doctor_profile"
+    android:orientation="vertical"
+    android:id="@+id/content"
+    >
+
+    <AbsoluteLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No drafts messages yet !"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            />
+    </AbsoluteLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lst">
+    </ListView>
+
+
+
+
+</LinearLayout>

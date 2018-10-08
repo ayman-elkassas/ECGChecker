@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.aymanelkassas.ecgchecker.report">
+        <item
+            android:id="@+id/quickly"
+            android:orderInCategory="0"
+            android:icon="@drawable/appointment_white"
+            android:title="determine time"
+            android:iconTint="@color/colorPrimary"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/rosheta"
+            android:orderInCategory="1"
+            android:icon="@drawable/recent_report_white"
+            android:title="Write rosheta"
+            app:showAsAction="always" />
+
+        <item
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:id="@+id/setting"
+            android:orderInCategory="2"
+            android:title="Setting"
+            app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logoutReport"
+        android:orderInCategory="100"
+        android:title="Log out"
+        android:icon="@drawable/logout"
+        app:showAsAction="never" />
+
+    </menu>
+

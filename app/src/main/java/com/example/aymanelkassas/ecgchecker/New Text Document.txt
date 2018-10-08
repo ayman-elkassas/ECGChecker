@@ -1,0 +1,9 @@
+Intent in =new Intent(DoctorProfile.this,report.class);
+                                                    Bundle b=new Bundle();
+                                                    b.putString("id",id[i]);
+                                                    b.putString("message_content",subject[i]);
+                                                    b.putString("full_name",senderName[i]);
+                                                    b.putString("avatar",patientAvatar[i]);
+                                                    b.putString("time",time[i]);
+                                                    in.putExtras(b);
+                                                    startActivity(in);

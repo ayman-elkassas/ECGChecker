@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aymanelkassas.ecgchecker.Rosheta">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#263143"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:title="Determine Appointment"
+            android:titleTextColor="@color/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="From "
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor name"
+            android:textSize="14sp"
+            android:background="@drawable/edittext_back"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bceeeeee"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginRight="20dp"
+            android:text="To "
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="patient name"
+            android:textSize="14sp"
+            android:background="@drawable/edittext_back"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bceeeeee"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Re : Ecg report replay for patient name Ecg report replay for patient name Ecg report replay for patient name Ecg report replay for patient name"
+        android:textColor="#000"
+        android:textSize="14sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bceeeeee"
+        />
+
+    <EditText
+        android:id="@+id/notificateContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/edittext_back"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Quoted text"
+        android:textColor="#000"
+        />
+
+    <Button
+        android:id="@+id/sendNotificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_reb"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Send diagnostic"
+        android:textAllCaps="false"
+        android:textColor="@color/secondColor" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.aymanelkassas.ecgchecker.G_PrivateProfileDoctor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/all"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!--<android.support.design.widget.AppBarLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+                <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:background="?attr/colorPrimary"-->
+                    <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+            <!--</android.support.design.widget.AppBarLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:background="@color/colorPrimary"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/privateAvatar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:elevation="1dp"
+                            android:src="@drawable/person"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/card"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="85dp"
+                                app:cardCornerRadius="10dp"
+                                app:contentPaddingBottom="15dp"
+                                app:contentPaddingLeft="15dp"
+                                app:contentPaddingRight="15dp"
+                                app:contentPaddingTop="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/privateFullnameDoctor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="30dp"
+                                        android:text="Dr. Ayman Elkassas"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="25sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/privateJobDoctor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="15dp"
+                                        android:text="empty"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/privateBioDoctor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:gravity="center"
+                                        android:textAlignment="center"
+                                        android:layout_marginTop="14dp"
+                                        android:text="empty"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_marginTop="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.vipul.hp_hp.timelineview.TimelineView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            app:line="@color/colorPrimary"
+                                            app:line_size="1dp"
+                                            app:marker="@drawable/points"
+                                            app:marker_size="20dp" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:src="@drawable/email"
+
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/privateMailDoctor"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="empty"
+                                            android:textSize="18dp" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.vipul.hp_hp.timelineview.TimelineView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            app:line="@color/colorPrimary"
+                                            app:line_size="1dp"
+                                            app:marker="@drawable/points"
+                                            app:marker_size="20dp" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:src="@drawable/location"
+
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/privateLocationDoctor"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="empty"
+                                            android:textSize="18dp" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.vipul.hp_hp.timelineview.TimelineView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            app:line="@color/colorPrimary"
+                                            app:line_size="1dp"
+                                            app:marker="@drawable/points"
+                                            app:marker_size="20dp" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:src="@drawable/phone"
+
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/privatePhoneDoctor"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="empty"
+                                            android:textSize="18dp" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.vipul.hp_hp.timelineview.TimelineView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            app:line="@color/colorPrimary"
+                                            app:line_size="1dp"
+                                            app:marker="@drawable/points"
+                                            app:marker_size="20dp" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:src="@drawable/timework"
+
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/privateTimeWorking"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="empty"
+                                            android:textSize="18dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/privateAvatar"
+        app:layout_anchorGravity="top|right"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/follow"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+
+
